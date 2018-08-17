@@ -9,6 +9,8 @@
     <properties>
         <aspectj.version>1.7.4</aspectj.version>
         <allure.version>1.5.4</allure.version>
+        <allure.results.directory>target/allure-results</allure.results.directory>
+        <allure.report.directory>target/allure-report</allure.report.directory>
     </properties>
 
     <dependencies>
@@ -98,6 +100,12 @@
                         -javaagent:${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar
                         -Dfile.encoding=UTF-8
                     </argLine>
+                    <systemProperties>
+                        <property>
+                            <name>allure.results.directory</name>
+                            <value>${allure.results.directory}</value>
+                        </property>
+                    </systemProperties>
                     <!--<properties>-->
                         <!--<property>-->
                             <!--<name>listener</name>-->

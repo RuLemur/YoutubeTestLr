@@ -9,7 +9,7 @@ import org.testng.Assert;
 import ru.yandex.qatools.allure.annotations.Step;
 
 /**
- * Abstract class representation of a Page in the UI. Page object pattern
+ *  Базовый абстрактный класс страницы
  */
 public abstract class Page {
 
@@ -37,11 +37,12 @@ public abstract class Page {
     }
 
     public void waitForPageLoaded() {
+
         WebDriverWait waiter = new WebDriverWait(driver, 10);
         ExpectedCondition<Boolean> expectation = driver -> ((JavascriptExecutor) driver).executeScript("return document.readyState")
                 .toString().equals("complete");
         try {
-            System.out.println(getTitle());
+            Thread.sleep(1000);
             waiter.until(expectation);
         } catch (Throwable error) {
             Assert.fail("Timeout waiting for Page Load Request to complete.");

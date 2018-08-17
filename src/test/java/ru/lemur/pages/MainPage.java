@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 import ru.yandex.qatools.allure.annotations.Step;
 
 /**
- * Sample page
+ * Главная страница
  */
 public class MainPage extends Page {
     @FindBy(name = "search_query")
@@ -15,6 +15,9 @@ public class MainPage extends Page {
 
     @FindBy(id = "search-icon-legacy")
     private WebElement searchBtn;
+
+    @FindBy(xpath = "//*[text()='Войти']")
+    private WebElement logInBtn;
 
     public MainPage(WebDriver driver) {
         super(driver);
@@ -29,6 +32,10 @@ public class MainPage extends Page {
         searchBtn.click();
     }
 
+    public void clickLogInBtn(){
+        logInBtn.click();
+        this.waitForPageLoaded();
+    }
 
 
 }
