@@ -2,6 +2,9 @@ package ru.lemur.helpers;
 
 import java.util.Random;
 
+/**
+ * Генераторы
+ */
 public class Generators {
     private static String chars= "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
 

@@ -12,6 +12,7 @@ import java.util.Properties;
 /**
  * Created by RuLemur on 17.08.2018 in 4:29.
  * EdServerTestTask
+ * Хелпер для чтения почты
  */
 public class MailHelper {
     private String userName;

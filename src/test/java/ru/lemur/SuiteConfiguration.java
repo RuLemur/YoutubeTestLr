@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.util.Properties;
 
 /**
- * Loads test suite configuration from resource files.
+ * Класс для загрузки настроек
  */
 public class SuiteConfiguration {
 

@@ -47,9 +47,6 @@ public class RegisterTest extends TestNgTestBase {
         LogInPage logInPage = new LogInPage(driver);
         logInPage.clickCreateAccountBtn();
 
-        String email = Generators.getRandomString(12) + "@gmail.com";
-        String pass = Generators.getRandomString(10);
-
         CreateAccountPage createAccountPage = new CreateAccountPage(driver);
         createAccountPage.clickAccept();
         createAccountPage.checkErrors();

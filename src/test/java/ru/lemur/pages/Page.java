@@ -23,11 +23,6 @@ public abstract class Page {
         return driver;
     }
 
-    /*
-     * Constructor injecting the WebDriver interface
-     *
-     * @param webDriver
-     */
     public Page(WebDriver driver) {
         this.driver = driver;
     }

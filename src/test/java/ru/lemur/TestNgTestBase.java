@@ -10,7 +10,7 @@ import ru.stqa.selenium.factory.WebDriverPool;
 import java.io.IOException;
 
 /**
- * Base class for TestNG-based test classes
+ * Базовый Тест Класс
  */
 public class TestNgTestBase {
 
